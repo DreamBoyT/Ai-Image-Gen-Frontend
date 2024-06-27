@@ -5,21 +5,21 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
-    background-color: #E7D4B5; /* white background */
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFFFFF; /* white background */
     color: #1e2833; /* dark text color */
 }
 
 header {
-    background-color: #000000; /* black header background */
+    background-color: #FFFFFF; /* black header background */
     text-align: center;
     padding: 20px 0;
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 4rem;
     margin: 0;
-    color: #ffffff; /* white text color */
+    color: #000000; /* white text color */
 }
 
 main {
@@ -73,7 +73,7 @@ main {
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-bottom: 20px; /* Increased space between subheading and icons */
     text-align: left; /* Align subheading to the left */
 }
@@ -96,12 +96,15 @@ h2 {
     font-size: 1.5rem; /* Increased icon font size */
     cursor: pointer;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added box shadow */
+    color: rgba(169, 169, 169, 0.9); /* Shady gray color with 80% opacity */
     transition: transform 0.3s, box-shadow 0.3s; /* Added transition */
 }
 
 .icon-button:hover {
-    transform: scale(1.1); /* Hover effect */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hover effect on box shadow */
+    transform: scale(1.1); /* Slightly enlarge the icon on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+    color: rgba(0, 0, 0, 0.8); /* Dark black color with 80% opacity */
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)); /* Gradient background on hover */
 }
 
 .prompt-field {
@@ -159,7 +162,7 @@ h2 {
     width: 400px;
     height: 450px;
     border-radius: 32px;
-    background-color: #EADBC8;
+    background-color: #EEEEEE;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 10px;
     padding: 20px;
@@ -189,17 +192,19 @@ h2 {
     width: 40px; /* Adjust button size */
     height: 40px; /* Adjust button size */
     border-radius: 50%; /* Rounded shape */
-    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.5); /* Dark color with 50% transparency */
     border: none;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1; /* Ensure icons are above the image */
+    color: rgba(255, 255, 255, 0.5); /* White text color with 50% transparency */
 }
 
 .icon-button-card2:hover {
-    background-color: rgba(255, 255, 255, 0.8); /* Hover effect */
+    background-color: rgba(0, 0, 0, 0.8); /* Darker transparent color on hover */
+    color: rgba(255, 255, 255, 1); /* Fully opaque text on hover */
 }
 
 .recycle-button-card2 {
@@ -210,35 +215,25 @@ h2 {
     right: 10px; /* Position delete button to the right */
 }
 
-.left-arrow-button-card2 {
-    left: 10px;
-    top: 50%; /* Center vertically */
-    transform: translateY(-50%);
-}
-
-.right-arrow-button-card2 {
-    right: 10px;
-    top: 50%; /* Center vertically */
-    transform: translateY(-50%);
-}
-
 .download-button-card2 {
     position: absolute;
     bottom: 10px; /* Adjust as needed for vertical positioning */
     left: 50%; /* Center horizontally */
     transform: translateX(-50%);
-    font-size: 1.2rem; /* Increased font size */
+    font-size: 2rem; /* Increased font size */
     padding: 15px 30px; /* Increased padding */
     border-radius: 12px; /* Rounded corners */
-    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.5); /* Dark color with 50% transparency */
+    color: rgba(255, 255, 255, 0.5); /* White text color with 50% transparency */
     border: none;
     cursor: pointer;
     z-index: 1; /* Ensure button is above the image */
-    transition: background-color 0.3s; /* Smooth hover transition */
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover transition */
 }
 
 .download-button-card2:hover {
-    background-color: rgba(255, 255, 255, 0.8); /* Hover effect */
+    background-color: rgba(0, 0, 0, 0.7); /* Darker background on hover */
+    color: rgba(255, 255, 255, 1); /* Fully opaque text on hover */
 }
 
 /* Card-3 Style */
@@ -247,7 +242,7 @@ h2 {
     width: 400px;
     height: 450px;
     border-radius: 32px;
-    background-color: #EADBC8;
+    background-color: #EEEEEE;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 10px;
     padding: 20px;
@@ -277,13 +272,14 @@ h2 {
     width: 40px; /* Adjust button size */
     height: 40px; /* Adjust button size */
     border-radius: 50%; /* Rounded shape */
-    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.5); /* Dark color with 50% transparency */
     border: none;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1; /* Ensure icons are above the image */
+    color: rgba(255, 255, 255, 0.5); /* White text color with 50% transparency */
 }
 
 .copy-button-card3 {
@@ -298,12 +294,16 @@ h2 {
     left: 10px; /* Position left arrow button to the left */
     top: 50%; /* Center vertically */
     transform: translateY(-50%); /* Adjust to center vertically */
+    color:#000000;
+    background-color: #EEEEEE;
 }
 
 .right-arrow-button-card3 {
     right: 10px; /* Position right arrow button to the right */
     top: 50%; /* Center vertically */
     transform: translateY(-50%); /* Adjust to center vertically */
+    color:#000000;
+    background-color: #EEEEEE;
 }
 
 .download-button-card3 {
@@ -311,22 +311,26 @@ h2 {
     bottom: 10px; /* Adjust as needed for vertical positioning */
     left: 50%; /* Center horizontally */
     transform: translateX(-50%);
-    font-size: 1.2rem; /* Increased font size */
+    font-size: 2rem; /* Increased font size */
     padding: 15px 30px; /* Increased padding */
     border-radius: 12px; /* Rounded corners */
-    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.5); /* Dark color with 50% transparency */
+    color: rgba(255, 255, 255, 0.5); /* White text color with 50% transparency */
     border: none;
     cursor: pointer;
     z-index: 1; /* Ensure button is above the image */
-    transition: background-color 0.3s; /* Smooth hover transition */
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover transition */
 }
 
 .download-button-card3:hover {
-    background-color: rgba(255, 255, 255, 0.8); /* Hover effect */
+    background-color: rgba(0, 0, 0, 0.7); /* Darker background on hover */
+    color: rgba(255, 255, 255, 1); /* Fully opaque text on hover */
 }
 
+
 .icon-button-card3:hover {
-    background-color: rgba(255, 255, 255, 0.8); /* Hover effect */
+    background-color: rgba(0, 0, 0, 0.8); /* Darker transparent color on hover */
+    color: rgba(255, 255, 255, 1); /* Fully opaque text on hover */
 }
 
 /* text on hover effect  */
